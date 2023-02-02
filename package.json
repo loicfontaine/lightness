@@ -1,0 +1,24 @@
+{
+  "name": "starter",
+  "version": "1.0.0",
+  "description": "��#\u0000 \u0000l\u0000i\u0000g\u0000h\u0000t\u0000n\u0000e\u0000s\u0000s\u0000\r\u0000 \u0000",
+  "browserslist": "> 0.25%, not dead",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "parcel src/index.html",
+    "build": "parcel build src/index.html"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/loicfontaine/lightness.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/loicfontaine/lightness/issues"
+  },
+  "homepage": "https://github.com/loicfontaine/lightness#readme",
+  "devDependencies": {
+    "parcel": "^2.8.3"
+  }
+}
