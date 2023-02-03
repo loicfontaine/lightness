@@ -20,5 +20,9 @@
   "homepage": "https://github.com/loicfontaine/lightness#readme",
   "devDependencies": {
     "parcel": "^2.8.3"
+  },
+  "dependencies": {
+    "color-convert": "^2.0.1",
+    "notyf": "^3.10.0"
   }
 }
