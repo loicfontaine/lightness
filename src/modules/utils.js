@@ -4,7 +4,6 @@ import * as convert from "color-convert";
 const colors = [];
 
 export function generatePalette(hex) {
-  console.log(hex);
   const [h, s] = convert.hex.hsl(hex);
 
   const tab = [];

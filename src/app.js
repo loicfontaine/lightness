@@ -25,19 +25,19 @@ form.addEventListener("submit", function (e) {
 });
 
 function displayColors(input) {
+  parent.innerHTML = "";
   const palette = generatePalette(input);
-  console.log(palette);
   palette.forEach((element) => {
     new Color(element).display(parent);
   });
 
   header.classList.add("minimized");
-  //parent.innerHTML = "";
 
   body.style.background = `linear-gradient(-45deg, ${getBackground(
     palette
   ).join(",")})`;
   body.style.backgroundSize = `400% 400%`;
+
   document.documentElement.style.setProperty("--shadow-color", shadow(input));
 }
 
@@ -45,7 +45,6 @@ function getBackground(palette) {
   const colorBG = [0, Math.round(palette.length / 2), palette.length - 1].map(
     (index) => `#${convert.hsl.hex(palette[index])}`
   );
-  console.log(colorBG);
   return colorBG;
 }
 
